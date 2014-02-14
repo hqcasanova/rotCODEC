@@ -103,7 +103,7 @@ public class RotCLI {
 				  
 				  window = new JFrame (sAppName+ " " +sAppVer);
 				  window.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
-				  window.setIconImage (Toolkit.getDefaultToolkit().getImage(RotCLI.class.getClass().getResource(sWinIcon)));
+				  window.setIconImage (Toolkit.getDefaultToolkit().getImage (RotCLI.class.getResource(sWinIcon)));
 				  window.getContentPane().add (new JScrollPane (new RotTextArea ()));
 				  window.pack();
 				  window.setVisible (true);				  				  

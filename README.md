@@ -22,7 +22,7 @@ The application was developed with version 7 but may work with other versions.
 Launching from the command line
 -------------------------------
 
-![Alt CLI](screenshots/async.png "Command-line Interface")
+![Alt CLI](screenshots/async.jpg "Command-line Interface")
 
 Syntax: `rotCODEC [list_of_files | sync]`
 
@@ -46,7 +46,7 @@ Same as above.
 Launching from the desktop
 --------------------------
 
-![Alt GUI](screenshots/sync.png "Graphical user interface")
+![Alt GUI](screenshots/sync.jpg "Graphical user interface")
 
 Double clicking on the `rotCODEC.jar` file will, on most systems, launch the
 graphical interface. 

@@ -8,8 +8,8 @@ for more information on ROT13 and ROT5.
 Features
 --------
 
-The program has two modes of operation: asynchronous (command-line) and synchronous 
-(graphical interface). The latter supports:
+The program has two modes of operation: asynchronous (command line interface) and 
+synchronous (graphical interface). The latter supports:
 - Pasting from the clipboard.
 - Encoding/decoding as text is typed/pasted.   
 
@@ -19,8 +19,8 @@ Minimum requirements
 Java SE Runtime Environment. If not already installed, you can download it from [Oracle](http://java.com/en/download/index.jsp). 
 The application was developed with version 7 but may work with other versions.
 
-Asynchronous (CLI) mode
------------------------
+Launching from the command line
+-------------------------------
 
 Syntax: `rotCODEC [list_of_files | sync]`
 
@@ -42,8 +42,8 @@ deciphers it on the fly. It supports pasting from the clipboard.
 
 Same as above.
 
-Synchronous (GUI) mode
-----------------------
+Launching from the desktop
+--------------------------
 
 Double clicking on the `rotCODEC.jar` file will, on most systems, launch a box
 into which the text to cipher/decipher can be typed or pasted. 
@@ -51,5 +51,5 @@ into which the text to cipher/decipher can be typed or pasted.
 Feedback
 --------
 
-This software is no longer maintained. Nevertheless, if you have any 
-comments, feel free to leave a message on my [website](http://www.hqcasanova.com).
+If you have any comments or suggestions, please feel free to leave a message on 
+my [website](http://www.hqcasanova.com). Thank you.

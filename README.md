@@ -22,8 +22,6 @@ The application was developed with version 7 but may work with other versions.
 Launching from the command line
 -------------------------------
 
-![Alt CLI](screenshots/async.jpg "Command-line Interface")
-
 Syntax: `rotCODEC [list_of_files | sync]`
 
 #### Examples

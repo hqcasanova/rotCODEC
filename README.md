@@ -8,8 +8,8 @@ for more information on ROT13 and ROT5.
 Features
 --------
 
-The program has two modes of operation: asynchronous (command line interface) and 
-synchronous (graphical interface). The latter supports:
+The program has two modes of operation: **asynchronous** (command line interface) and 
+**synchronous** (graphical interface). The latter supports:
 - Pasting from the clipboard.
 - Encoding/decoding as text is typed/pasted.   
 
@@ -22,21 +22,22 @@ The application was developed with version 7 but may work with other versions.
 Launching from the command line
 -------------------------------
 
+![Alt CLI](screenshots/async.png "Command-line Interface")
+
 Syntax: `rotCODEC [list_of_files | sync]`
 
 #### Examples
 
 `java -jar rotCODEC.jar challenge.txt output.txt`
 
-Enters the so-called asynchronous mode of operation. Takes the text in 
+Enters the so-called **asynchronous mode**: takes the text in 
 `challenge.txt`, applies the ROT13/5 cipher and saves the 
 result into `output.txt`.
 
 `java -jar rotCODEC.jar sync`
 
-Enters synchronous mode of operation. Launches a window into which the user
-can type some text. As the user types, the program automatically ciphers or 
-deciphers it on the fly. It supports pasting from the clipboard.
+Enters **synchronous mode**: launches a text box into which the user can enter
+the message to be ciphered or deciphered.
 
 `java -jar rotCODEC.jar`
 
@@ -45,8 +46,10 @@ Same as above.
 Launching from the desktop
 --------------------------
 
-Double clicking on the `rotCODEC.jar` file will, on most systems, launch a box
-into which the text to cipher/decipher can be typed or pasted. 
+![Alt GUI](screenshots/sync.png "Graphical user interface")
+
+Double clicking on the `rotCODEC.jar` file will, on most systems, launch the
+graphical interface. 
 
 Feedback
 --------

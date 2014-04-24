@@ -31,45 +31,42 @@ import javax.swing.text.DocumentFilter;
  */
 @SuppressWarnings("serial")
 public class RotTextArea extends JTextArea {
-	public final static String posErr = "Wrong position within the input field: ";
-	public final static String defText = "Type or paste the text into this area. The program will cipher/decipher it on the fly.";
-	public final static int defRows = 10;
-	public final static int defCols = 80;
-	
-	/**
-	 * Customised constructor. Sets the size of the text area and changes its document filter.
-	 * @param noRows Number of rows
-	 * @param noCols Number of columns
-	 */
-	public RotTextArea (String hintText, int noRows, int noCols) {
-		super (noRows, noCols);
-		
-		//Show an inline tip
-		TextPrompt hint = new TextPrompt (hintText, this);
-		hint.changeAlpha (0.5f);
-		hint.changeStyle (Font.BOLD);
-		hint.setHorizontalAlignment (JLabel.CENTER);
-								
-		((AbstractDocument) this.getDocument()).setDocumentFilter (new DocumentFilter() {
+    public final static String posErr = "Wrong position within the input field: ";
+    public final static String defText = "Type or paste the text into this area. The program will cipher/decipher it on the fly.";
+    public final static int defRows = 10;
+    public final static int defCols = 80;
 
-			  public void insertString (DocumentFilter.FilterBypass bypass, int iOffset,
-			                            String sText, AttributeSet attrib) throws BadLocationException {
-			      bypass.insertString (iOffset, RotCODEC.rotten (sText), attrib);
-			  }
+    /**
+     * Customised constructor. Sets the size of the text area and changes its document filter.
+     * @param noRows Number of rows
+     * @param noCols Number of columns
+     */
+    public RotTextArea(String hintText, int noRows, int noCols) {
+        super(noRows, noCols);
 
-			  public void replace (DocumentFilter.FilterBypass bypass, int iOffset, int iLength,
-			                       String sText, AttributeSet attrib) throws BadLocationException {
-			      bypass.replace (iOffset, iLength, RotCODEC.rotten (sText), attrib);
-			  }
-		});		
-	}
-	
-	/**
-	 * Default constructor. Synonym for the above with default size values.
-	 */
-	public RotTextArea () {
-		this (defText, defRows, defCols);
-	}
-	
-	
+        //Show an inline tip
+        TextPrompt hint = new TextPrompt(hintText, this);
+        hint.changeAlpha(0.5f);
+        hint.changeStyle(Font.BOLD);
+        hint.setHorizontalAlignment(JLabel.CENTER);
+
+        ((AbstractDocument) this.getDocument()).setDocumentFilter(new DocumentFilter() {
+              public void insertString(DocumentFilter.FilterBypass bypass, int iOffset,
+                                       String sText, AttributeSet attrib) throws BadLocationException {
+                  bypass.insertString(iOffset, RotCODEC.rotten(sText), attrib);
+              }
+
+              public void replace(DocumentFilter.FilterBypass bypass, int iOffset, int iLength,
+                                  String sText, AttributeSet attrib) throws BadLocationException {
+                  bypass.replace(iOffset, iLength, RotCODEC.rotten(sText), attrib);
+              }
+        });
+    }
+
+    /**
+     * Default constructor. Synonym for the above with default size values.
+     */
+    public RotTextArea() {
+        this(defText, defRows, defCols);
+    }
 }

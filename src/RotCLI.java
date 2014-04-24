@@ -75,11 +75,11 @@ public class RotCLI {
             int iChar2Translate = -1;               //ASCII of stream character to code/decode
 
     	    try {
-	            //Set up the character streams
-	            toTranslate = new InputStreamReader(new FileInputStream(args[0]));
-	            translated = new OutputStreamWriter(new FileOutputStream(args[1]));
+                //Set up the character streams
+                toTranslate = new InputStreamReader(new FileInputStream(args[0]));
+                translated = new OutputStreamWriter(new FileOutputStream(args[1]));
 
-   	            //Read one character at a time: code/decode it and write to file
+                //Read one character at a time: code/decode it and write to file
                 iChar2Translate = toTranslate.read();
                 while (iChar2Translate >= 0) {
                     translated.write (RotCODEC.rotten((char) iChar2Translate));

@@ -8,7 +8,7 @@ for more information on ROT13 and ROT5.
 Features
 --------
 
-The program has two modes of operation: **asynchronous** (command line interface) and
+The program has 2 modes of operation: **asynchronous** (command line interface) and
 **synchronous** (graphical interface). The latter supports:
 - Pasting from the clipboard.
 - Encoding/decoding as text is typed/pasted.
